@@ -25,6 +25,23 @@
     </div>
     </div>
 
-  <p> {{ values }} </p>
+    <section class="weather_cards">
+      <div class="temp1">
+        <p>Temperature</p>
+        <h2> {{ values ['main'] ['temp'] }}</h2>
+      </div>
+      <div class="temp">
+        <p>Pressure</p>
+        <h2> {{ values ['main'] ['pressure'] }}</h2>
+      </div>
+      <div class="temp">
+        <p>Wind Speed</p>
+        <h2> {{ values ['wind'] ['speed'] }}</h2>
+      </div>
+      <div class="temp">
+        <p>Humidity</p>
+        <h2> {{ values ['main'] ['humidity'] }}</h2>
+      </div>
+    </section>
 
 {% endblock%}
