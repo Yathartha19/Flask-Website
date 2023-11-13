@@ -1,0 +1,233 @@
+.main {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(cloud.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: center center;
+    height: 65rem;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 80rem) / 2);
+}
+
+.main-column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--pure-white-color);
+    padding: 0rem 2rem;
+    padding-top:10rem;
+}
+
+.main-column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.main-column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.main-column-left button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: var(--foreground-color);
+    background: var(--background-color);
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.main-column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+    padding-top: 7rem;
+}
+
+.main-image {
+    width: 100%;
+    height: 80%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sec h1 {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 0;
+    font-size: 3rem;
+}
+
+.sec-container {
+    display: flex;
+    min-height: 100vh;
+    padding: 10rem calc((100vw - 80rem) / 10);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--pure-black-color);
+    padding: 0rem 2rem;
+
+    flex-basis: 35%;
+    background: var(--light-blue-color);
+    border-radius: 30px;
+    margin-bottom: 5%;
+    box-sizing: content-box;
+    transition: 0.2s;
+}
+
+.left:hover {
+    box-shadow: 0 0 20px 0px var(--glow);
+}
+
+.left h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--pure-black-color);
+    padding: 0rem 2rem;
+
+    flex-basis: 35%;
+    background: var(--light-blue-color);
+    border-radius: 30px;
+    margin-bottom: 5%;
+    box-sizing: content-box;
+
+    transition: 0.2s;
+}
+
+.right:hover {
+    box-shadow: 0 0 20px 0px var(--glow);
+}
+
+.right h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.right p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: var(--foreground-color);
+    background: var(--background-color);
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.more h2 {
+    text-align: center;
+    padding-top: 8%;
+    font-size: 3rem;
+}
+
+.sec-con {
+    display: flex;
+    height: 90vh;
+    padding-top: 8rem;
+    justify-content: space-evenly;
+    padding-bottom: 10rem;
+}
+
+.leftcol {
+    flex-basis: 30%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.leftcol img {
+    width: 100%;
+    height: 100%;
+}
+
+.midcol {
+    flex-basis: 30%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.midcol img {
+    width: 100%;
+    height: 100%;
+}
+
+.rightcol {
+    flex-basis: 30%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rightcol img {
+    width: 100%;
+    height: 100%;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.25s;
+}
+
+a, a:visited , a:active {
+    text-decoration: none;
+}
+
+.layer:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.layer h3 {
+    opacity: 0;
+    color: var(--pure-white-color);
+    font-size: 2rem;
+    transition: 0.5s;
+    text-align: center;
+    padding-top: 35%;
+}
+
+.layer:hover h3 {
+    opacity: 1;
+}

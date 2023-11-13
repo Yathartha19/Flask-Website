@@ -4,13 +4,16 @@
 .city-input{
   padding-top: 6rem;
   padding-left: 10rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .input-field{
   position: relative;
 }
+
 .input-field input{
-   width: 350px;
+  width: 160%;
   height: 60px;
   border-radius: 6px;
   font-size: 18px;
