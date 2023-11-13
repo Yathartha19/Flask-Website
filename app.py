@@ -3,11 +3,11 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/', methods = ['GET','POST'])
 def home():
     return render_template("index.html")
 
-@app.route('/weather', methods=['GET','POST'])
+@app.route('/weather', methods = ['GET','POST'])
 def weather():
     if request.method == 'POST':
 
@@ -20,11 +20,11 @@ def weather():
     else:
         return render_template('weather.html')
 
-@app.route('/health', methods=['GET','POST'])
+@app.route('/health', methods = ['GET','POST'])
 def health():
     return render_template('health.html')
 
-@app.route('/consultation', methods=['GET','POST'])
+@app.route('/consultation', methods = ['GET','POST'])
 def consultation():
     return render_template('consultation.html')
 
