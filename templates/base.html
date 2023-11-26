@@ -9,6 +9,7 @@
     <script> document.querySelector('html').dataset.theme = localStorage.getItem('theme') </script>
     <script src="{{ url_for('static', filename='javascript/main.js') }}" defer></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}" />
 
     {% block head %} {% endblock%}
 
